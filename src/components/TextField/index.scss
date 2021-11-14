@@ -1,0 +1,56 @@
+@import "src/styles/vars";
+
+.CL_textField_root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  position: relative;
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: black;
+    color: black;
+  }
+}
+
+.CL_textField_input {
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+}
+
+.CL_textField_red {
+  &:focus-within::after {
+    background-color: $primary-red;
+    height: 2px;
+  }
+}
+
+.CL_textField_green {
+  &:focus-within::after {
+    background-color: $primary-green;
+    height: 2px;
+  }
+}
+
+.CL_textField_blue {
+  &:focus-within::after {
+    background-color: $primary-blue;
+    height: 2px;
+  }
+}
+
+.CL_textField_yellow {
+  &:focus-within::after {
+    background-color: $primary-yellow;
+    height: 2px;
+  }
+}

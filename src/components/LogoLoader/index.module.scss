@@ -1,0 +1,40 @@
+@import "src/styles/vars";
+
+$duration: 1.5s;
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: root-animation $duration linear infinite;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  animation: root-animation $duration * 4 linear infinite;
+}
+
+.red {
+  background-color: $primary-red;
+}
+
+.blue {
+  background-color: $primary-blue;
+}
+
+.green {
+  background-color: $primary-green;
+}
+
+.yellow {
+  background-color: $primary-yellow;
+}
+
+@keyframes root-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,26 @@
+.test {
+}
+
+.test-item {
+  margin-bottom: 20px;
+}
+
+.test-input {
+  font-size: 25px;
+}
+
+
+.after-test {
+  position: relative;
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: black;
+    color: black;
+  }
+}

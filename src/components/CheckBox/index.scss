@@ -1,0 +1,77 @@
+@import "src/styles/vars";
+@import "src/styles/mixins";
+
+
+.CL_checkBox_root {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.CL_checkBox_rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  outline: none;
+  svg {
+    width: 60%;
+  }
+}
+
+.CL_checkBox_dark {
+  border: 1px solid $primary-dark;
+  @include focusable($focus-dark);
+}
+
+.CL_checkBox_dark[data-checked=true] {
+  border: 1px solid $primary-dark;
+  background-color: $primary-dark;
+}
+
+.CL_checkBox_red {
+  border: 1px solid $primary-red;
+  @include focusable($focus-red);
+}
+
+.CL_checkBox_red[data-checked=true] {
+  border: 1px solid $primary-red;
+  background-color: $primary-red;
+}
+
+.CL_checkBox_green {
+  border: 1px solid $primary-green;
+  @include focusable($focus-green);
+}
+
+.CL_checkBox_green[data-checked=true] {
+  border: 1px solid $primary-green;
+  background-color: $primary-green;
+}
+
+.CL_checkBox_blue {
+  border: 1px solid $primary-blue;
+  @include focusable($focus-blue);
+}
+
+.CL_checkBox_blue[data-checked=true] {
+  border: 1px solid $primary-blue;
+  background-color: $primary-blue;
+}
+
+.CL_checkBox_yellow {
+  border: 1px solid $primary-yellow;
+  @include focusable($focus-yellow);
+}
+
+.CL_checkBox_yellow[data-checked=true] {
+  border: 1px solid $primary-yellow;
+  background-color: $primary-yellow;
+}
+
+.CL_checkBox_label {
+  user-select: none;
+}

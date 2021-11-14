@@ -1,0 +1,75 @@
+@import "src/styles/vars";
+@import "src/styles/mixins";
+
+.CL_button_root {
+  padding: 0 20px;
+  border-radius: $border-radius;
+  border: 0;
+  height: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color .2s;
+  outline: none;
+}
+
+.CL_button_label {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.CL_button_green {
+  background-color: $primary-green;
+  &:hover {
+    background-color: $hover-green;
+  }
+  @include focusable($focus-green);
+  &[aria-disabled=true] {
+    @include disabled($disabled-green)
+  }
+}
+
+.CL_button_blue {
+  background-color: $primary-blue;
+  &:hover {
+    background-color: $hover-blue;
+  }
+  @include focusable($focus-blue);
+  &[aria-disabled=true] {
+    @include disabled($disabled-blue)
+  }
+}
+
+.CL_button_red {
+  background-color: $primary-red;
+  &:hover {
+    background-color: $hover-red;
+  }
+  @include focusable($focus-red);
+  &[aria-disabled=true] {
+    @include disabled($disabled-red)
+  }
+}
+
+.CL_button_yellow {
+  background-color: $primary-yellow;
+  &:hover {
+    background-color: $hover-yellow;
+  }
+  @include focusable($focus-yellow);
+  &[aria-disabled=true] {
+    @include disabled($disabled-yellow)
+  }
+}
+
+.CL_button_dark {
+  background-color: $primary-dark;
+  &:hover {
+    background-color: $hover-dark;
+  }
+  @include focusable($focus-dark);
+  &[aria-disabled=true] {
+    @include disabled($disabled-dark)
+  }
+}
